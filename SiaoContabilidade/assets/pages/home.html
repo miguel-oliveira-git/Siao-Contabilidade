@@ -1,11 +1,347 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sião Contabilidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <header class="site-header">
+                <a class="brand" href="#inicio">Sião Contabilidade</a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu de navegação">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="#inicio" aria-current="page">Home</a></li>
+                        <li class="nav-services">
+                            <a class="has-submenu" href="#servicos">Serviços</a>
+                            <div class="nav-services__menu" aria-label="Todos os serviços">
+                                <a href="servicos/contabilidade.html">Serviços contábeis</a>
+                                <a href="servicos/abertura-empresa.html">Abertura de empresa</a>
+                                <a href="servicos/escrituracao-fiscal.html">Escrituração fiscal</a>
+                                <a href="servicos/departamento-pessoal.html">Departamento pessoal</a>
+                                <a href="servicos/imposto-de-renda.html">Imposto de Renda</a>
+                                <a href="servicos/fiscalizacao.html">Acompanhamento de fiscalização</a>
+                            </div>
+                        </li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>
+                <a class="header__cta" href="#contatos">Fale conosco</a>
+            </header>
+
+            <div class="hero__content">
+                <h1 id="hero-title">
+                    Serviços contábeis, para empresas do <strong>Simples Nacional.</strong>
+                </h1>
+                <p>
+                    Mantenha sua empresa 100% regularizada e garanta que está pagando apenas os impostos necessários. Descomplicamos a gestão para você focar no que realmente importa: crescer sua empresa.
+                </p>
+                <div class="hero__actions" aria-label="Ações principais">
+                    <a class="hero__cta hero__cta--primary" href="https://wa.me/551533180034?text=Olá%2C%20quero%20falar%20com%20um%20contador." target="_blank" rel="noreferrer">Falar com um contador</a>
+                    <a class="hero__cta hero__cta--secondary" href="#servicos">Ver serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="servicos" aria-labelledby="services-title">
+            <div class="services__container">
+                <div class="services__heading">
+                    <div>
+                        <p class="services__eyebrow">SOLUÇÕES PARA A SUA EMPRESA</p>
+                        <h2 id="services-title">Serviços que simplificam sua gestão</h2>
+                    </div>
+                </div>
+
+                <p class="services__intro">Da rotina contábil às decisões estratégicas, cuidamos das obrigações da sua empresa com clareza, proximidade e segurança.</p>
+
+                <div class="services__grid">
+                    <article class="service-card" id="simples-nacional">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Pessoa organizando documentos e calculadora para a gestão contábil">
+                        <div class="service-card__content">
+                            <h3>Serviços Contábeis:</h3>
+                            <p>Gestão contábil para manter sua empresa organizada e regularizada, com uma visão clara da sua rotina.</p>
+                            <a href="servicos/contabilidade.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="abertura">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Profissionais reunidos para planejar a abertura de uma empresa">
+                        <div class="service-card__content">
+                            <h3>Abertura de Empresa:</h3>
+                            <p>Formalização do seu negócio de forma simples e ágil, com orientação em cada etapa.</p>
+                            <a href="servicos/abertura-empresa.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="fiscal">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Calculadora e documentos usados na organização fiscal">
+                        <div class="service-card__content">
+                            <h3>Escrituração Fiscal:</h3>
+                            <p>Registro e controle das obrigações fiscais da sua empresa, com atenção aos prazos.</p>
+                            <a href="servicos/escrituracao-fiscal.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="pessoal">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Equipe colaborando em uma reunião de trabalho">
+                        <div class="service-card__content">
+                            <h3>Departamento Pessoal:</h3>
+                            <p>Gestão de funcionários, salários e obrigações trabalhistas, com processos bem organizados.</p>
+                            <a href="servicos/departamento-pessoal.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="pro-labore">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Pessoa realizando uma conferência financeira em seu computador">
+                        <div class="service-card__content">
+                            <h3>Imposto de Renda:</h3>
+                            <p>Elaboração e entrega de declarações com segurança, do início ao fim do processo.</p>
+                            <a href="servicos/imposto-de-renda.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="regularizacao">
+                        <img class="service-card__image" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Documentos financeiros organizados para acompanhamento de fiscalização">
+                        <div class="service-card__content">
+                            <h3>Acompanhamento de Fiscalização:</h3>
+                            <p>Suporte e orientação durante fiscalizações tributárias, para decisões mais seguras.</p>
+                            <a href="servicos/fiscalizacao.html">Saiba mais <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre" aria-labelledby="about-title">
+            <div class="about__content" id="quem-somos">
+                <div class="about__copy">
+                    <p class="about__eyebrow">QUEM SOMOS</p>
+                    <h3>Contabilidade que acompanha o crescimento da sua empresa</h3>
+                    <p class="about__description">
+                        Na Sião Contabilidade, unimos experiência, proximidade e soluções inteligentes para tornar a gestão da sua empresa mais simples, segura e eficiente.
+                    </p>
+                    <div class="about__note">
+                        <strong>Uma rotina mais leve para sua empresa.</strong>
+                        <span>Organização, orientação e acompanhamento para você decidir com segurança.</span>
+                    </div>
+                    <a class="about__more-link" href="#contatos">Conheça o Sião <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="about__media">
+                    <img class="about__image" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Equipe reunida em um escritório para alinhar soluções para empresas">
+                </div>
+            </div>
+        </section>
+
+        <section class="partners" id="clientes" aria-labelledby="partners-title">
+            <div class="partners__container">
+                <h2 id="partners-title">Parceiros</h2>
+                <div class="partners__viewport" aria-label="Parceiros da Sião Contabilidade">
+                    <div class="partners__track">
+                        <div class="partners__group">
+                            <span class="partner-logo partner-logo--nexo">NEXO</span>
+                            <span class="partner-logo partner-logo--aurora">aurora</span>
+                            <span class="partner-logo partner-logo--verso">VERSO</span>
+                            <span class="partner-logo partner-logo--matriz">Matriz</span>
+                            <span class="partner-logo partner-logo--escala">ESCALA</span>
+                            <span class="partner-logo partner-logo--liga">liga</span>
+                        </div>
+                        <div class="partners__group" aria-hidden="true">
+                            <span class="partner-logo partner-logo--nexo">NEXO</span>
+                            <span class="partner-logo partner-logo--aurora">aurora</span>
+                            <span class="partner-logo partner-logo--verso">VERSO</span>
+                            <span class="partner-logo partner-logo--matriz">Matriz</span>
+                            <span class="partner-logo partner-logo--escala">ESCALA</span>
+                            <span class="partner-logo partner-logo--liga">liga</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="testimonials__container">
+                <div class="testimonials__intro">
+                    <p class="testimonials__eyebrow">DEPOIMENTOS</p>
+                    <h2 id="testimonials-title">Mais tranquilidade para cuidar do seu negócio.</h2>
+                    <div class="testimonials__controls" aria-label="Navegação dos depoimentos">
+                        <button class="testimonials__button" type="button" data-testimonial-direction="previous" aria-label="Depoimento anterior">←</button>
+                        <button class="testimonials__button" type="button" data-testimonial-direction="next" aria-label="Próximo depoimento">→</button>
+                    </div>
+                </div>
+
+                <div class="testimonials__viewport" tabindex="0" aria-label="Depoimentos demonstrativos">
+                    <div class="testimonials__track">
+                        <article class="testimonial-card">
+                            <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                            <p class="testimonial-card__rating" aria-label="Cinco de cinco estrelas">★★★★★</p>
+                            <p class="testimonial-card__text">A rotina ficou muito mais organizada. Hoje sabemos o que precisa ser feito e contamos com uma equipe que explica cada etapa com clareza.</p>
+                            <footer class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">S</span>
+                                <span><strong>Depoimento demonstrativo</strong><small>Empresa do Simples Nacional</small></span>
+                            </footer>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                            <p class="testimonial-card__rating" aria-label="Cinco de cinco estrelas">★★★★★</p>
+                            <p class="testimonial-card__text">O atendimento próximo faz diferença. Recebemos orientações objetivas e ganhamos mais segurança para tomar decisões no dia a dia.</p>
+                            <footer class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">M</span>
+                                <span><strong>Depoimento demonstrativo</strong><small>Empresa de serviços</small></span>
+                            </footer>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                            <p class="testimonial-card__rating" aria-label="Cinco de cinco estrelas">★★★★★</p>
+                            <p class="testimonial-card__text">Ter apoio para as obrigações fiscais deixou a gestão mais simples. A comunicação é rápida, transparente e adequada à nossa realidade.</p>
+                            <footer class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">A</span>
+                                <span><strong>Depoimento demonstrativo</strong><small>Comércio varejista</small></span>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contatos" aria-labelledby="contact-title">
+            <div class="contact__container">
+                <div class="contact__details">
+                    <h2 id="contact-title">Entre em contato</h2>
+                    <p class="contact__lead">Conte com uma equipe próxima para organizar suas obrigações e tomar decisões mais seguras para a sua empresa.</p>
+                    <address class="contact__list">
+                        <a class="contact__item" href="mailto:siao.contabil@hotmail.com">
+                            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 5.5h17v13h-17zM4 6l8 6 8-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
+                            <span>Email</span>
+                            <strong>siao.contabil@hotmail.com</strong>
+                        </a>
+                        <a class="contact__item" href="https://wa.me/551533180034" target="_blank" rel="noreferrer">
+                            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.4 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-3.8a8.4 8.4 0 1 1 15.2-4.7Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M9.1 7.7c.3-.7.6-.7.9-.7h.5c.2 0 .5.1.6.5l.8 1.8c.1.3.1.5 0 .7l-.5.6c-.2.2-.3.3-.1.6.3.6.9 1.4 1.9 2.1 1.1.8 1.9 1.1 2.3 1.3.3.1.5.1.7-.1l.8-.9c.2-.2.4-.3.7-.2l1.8.8c.3.1.5.3.5.5v.6c0 .4-.3.8-.7 1-1 .4-2.4.1-4.4-.8-1.6-.7-3.1-2-4.2-3.5-1.1-1.5-1.6-3-1.5-4.1.1-.5.2-.9.5-1.2Z" fill="currentColor"/></svg>
+                            <span>Whatsapp</span>
+                            <strong>(15) 3318-0034</strong>
+                        </a>
+                    </address>
+                    <div class="contact__assurance">
+                        <p>Por que falar com o Sião?</p>
+                        <ul>
+                            <li>Atendimento para empresas do Simples Nacional</li>
+                            <li>Orientação clara para a rotina do seu negócio</li>
+                            <li>Comunicação direta e próxima</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact__form-area">
+                    <p class="contact__intro">Na Sião Contabilidade, acreditamos que uma boa conversa é o início de uma parceria. Conte-nos sobre sua empresa e como podemos ajudar.</p>
+                    <form class="contact__form">
+                        <label>
+                            Nome
+                            <input type="text" name="name" autocomplete="name" required>
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" autocomplete="email" required>
+                        </label>
+                        <label>
+                            Descreva sua necessidade
+                            <textarea name="message" rows="4" required></textarea>
+                        </label>
+                        <button class="contact__submit" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+            <div class="faq__container">
+                <h2 id="faq-title">Perguntas Frequentes</h2>
+
+                <div class="faq__list">
+                    <details class="faq__item" open>
+                        <summary>Quais serviços a Sião Contabilidade oferece?</summary>
+                        <p class="faq__answer">Oferecemos serviços contábeis, fiscais, trabalhistas, abertura e regularização de empresas, planejamento tributário e acompanhamento personalizado para empresas do Simples Nacional.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Como funciona a abertura de empresa?</summary>
+                        <p class="faq__answer">Cuidamos de cada etapa, desde a definição da atividade e enquadramento tributário até o registro da empresa e a emissão do CNPJ.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Quais documentos preciso enviar mensalmente?</summary>
+                        <p class="faq__answer">Nossa equipe orienta você sobre os documentos necessários e disponibiliza um processo simples para o envio das informações mensais.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Vocês atendem empresas do Simples Nacional?</summary>
+                        <p class="faq__answer">Sim. A Sião Contabilidade é especializada em apoiar empresas optantes pelo Simples Nacional com segurança e planejamento.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Como posso solicitar uma proposta?</summary>
+                        <p class="faq__answer">Entre em contato por e-mail, WhatsApp ou pelo formulário. Entenderemos o momento da sua empresa para apresentar a melhor solução.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__brand-column">
+                <a class="brand site-footer__brand" href="#inicio">Sião Contabilidade</a>
+                <p>Contabilidade parceira para decisões mais seguras e o crescimento da sua empresa.</p>
+                <div class="site-footer__socials" aria-label="Redes sociais">
+                    <a href="#contatos" aria-label="Facebook">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.6 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.2-1.5 1.6-1.5H16V3.6c-.3 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6v2H8v3.1h2.3v8h3.3Z" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#contatos" aria-label="Instagram">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.6" r="1.1" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#contatos" aria-label="WhatsApp">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.4 11.5a8.4 8.4 0 0 1-12.4 7.4L4 20l1.2-3.8a8.4 8.4 0 1 1 15.2-4.7Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M9.1 7.7c.3-.7.6-.7.9-.7h.5c.2 0 .5.1.6.5l.8 1.8c.1.3.1.5 0 .7l-.5.6c-.2.2-.3.3-.1.6.3.6.9 1.4 1.9 2.1 1.1.8 1.9 1.1 2.3 1.3.3.1.5.1.7-.1l.8-.9c.2-.2.4-.3.7-.2l1.8.8c.3.1.5.3.5.5v.6c0 .4-.3.8-.7 1-1 .4-2.4.1-4.4-.8-1.6-.7-3.1-2-4.2-3.5-1.1-1.5-1.6-3-1.5-4.1.1-.5.2-.9.5-1.2Z" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#contatos" aria-label="LinkedIn">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.3 8.5H3.4V21h2.9V8.5ZM4.9 3A1.7 1.7 0 1 0 5 6.4 1.7 1.7 0 0 0 4.9 3ZM21 13.8c0-3.8-2-5.6-4.7-5.6-2.2 0-3.1 1.2-3.7 2v-1.7H9.7V21h2.9v-6.2c0-1.6.3-3.1 2.3-3.1 2 0 2 1.9 2 3.2V21H21v-7.2Z" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="Links institucionais">
+                <h2>Institucional</h2>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#clientes">Parceiros</a>
+                <a href="#contatos">Contato</a>
+                <a href="#faq-title">Perguntas frequentes</a>
+            </nav>
+
+            <nav class="site-footer__nav" aria-label="Links de serviços">
+                <h2>Serviços</h2>
+                <a href="#simples-nacional">Contabilidade</a>
+                <a href="#abertura">Abertura de empresa</a>
+                <a href="#fiscal">Gestão fiscal</a>
+                <a href="#pessoal">Departamento pessoal</a>
+            </nav>
+
+            <nav class="site-footer__nav" aria-label="Links de suporte">
+                <h2>Suporte</h2>
+                <a href="mailto:siao.contabil@hotmail.com">E-mail</a>
+                <a href="https://wa.me/551533180034" target="_blank" rel="noreferrer">WhatsApp</a>
+                <a href="#contatos">Solicite uma proposta</a>
+                <a href="termos-de-uso.html">Termos de uso</a>
+                <a href="politica-de-privacidade.html">Política de privacidade</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
